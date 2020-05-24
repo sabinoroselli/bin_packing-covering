@@ -1,6 +1,10 @@
 BIN PACKING/COVERING SCHEDULER
 
-the "bin scheduler" allow to allocate items into bins and it works both for packing (when bins have a maximum capacity and the goal is to minimize the number of bins that contain all items) and covering (or dual-packing, where bins have a minimum target and the goal is to maximize the number of bins)
+In order to work with the solver, it is necessary to have Gurobi installed on the machine
+
+Additional python packages such as "numpy", "scipy", "os", "csv", "re" are required (installing Anaconda is probably the quickest way to get all of them at once)
+
+The "bin scheduler" allow to allocate items into bins and it works both for packing (when bins have a maximum capacity and the goal is to minimize the number of bins that contain all items) and covering (or dual-packing, where bins have a minimum target and the goal is to maximize the number of bins)
 
 The scheduler can generate instances with normally distributed items based on parameters such as range of values, number of items, target value and distribution specifications such as average value and deviation, or read existing instances from csv files (sets of benchmark instances from the literature are available in the benchmark forlder). 
 
