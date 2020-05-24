@@ -1,0 +1,227 @@
+Current Instance:  Falkenauer_t60_00.txt
+the sum of all items in the instance 20000
+#_eq_classes 50
+average class size 1.2
+generated_solutions  9591
+Using license file /home/sabino/gurobi.lic
+Academic license - for non-commercial use only
+package generation time:  0.16487503051757812
+optimum:  20.0
+model generation:  0.18359041213989258
+solving time:  0.05099225044250488
+
+Current Instance:  Falkenauer_t60_00.txt
+the sum of all items in the instance 20000
+#_eq_classes 50
+average class size 1.2
+generated_solutions  9591
+Using license file /home/sabino/gurobi.lic
+Academic license - for non-commercial use only
+package generation time:  0.16536259651184082
+optimum:  20.0
+model generation:  0.18331551551818848
+solving time:  0.050658226013183594
+
+Current Instance:  Schwerin1_BPP100.txt
+the sum of all items in the instance 17259
+#_eq_classes 43
+average class size 2.33
+generated_solutions  2215835
+Using license file /home/sabino/gurobi.lic
+Academic license - for non-commercial use only
+package generation time:  43.82802724838257
+optimum:  18.0
+model generation:  55.30005598068237
+solving time:  72.37139010429382
+
+Current Instance:  HARD0.txt
+the sum of all items in the instance 5440282
+#_eq_classes 199
+average class size 1.01
+generated_solutions  10271992
+Using license file /home/sabino/gurobi.lic
+Academic license - for non-commercial use only
+package generation time:  984.9050943851471
+optimum:  56.0
+model generation:  304.4706609249115
+solving time:  835.0262720584869
+
+Current Instance:  N2C2W1_I.txt
+the sum of all items in the instance 5188
+#_eq_classes 67
+average class size 1.49
+generated_solutions  1040901
+Using license file /home/sabino/gurobi.lic
+Academic license - for non-commercial use only
+package generation time:  17.740424633026123
+optimum:  45.0
+model generation:  30.93988871574402
+solving time:  34.52135896682739
+Current Instance:  N1C3W1_Q.txt
+the sum of all items in the instance 2948
+#_eq_classes 42
+average class size 1.19
+generated_solutions  23174
+Using license file /home/sabino/gurobi.lic
+Academic license - for non-commercial use only
+package generation time:  0.19786405563354492
+optimum:  20.0
+model generation:  0.502079963684082
+solving time:  0.1480393409729004
+Current Instance:  N1C3W1_L.txt
+the sum of all items in the instance 2447
+#_eq_classes 35
+average class size 1.43
+generated_solutions  72965
+package generation time:  0.6475741863250732
+optimum:  17.0
+model generation:  1.7816321849822998
+solving time:  0.7103221416473389
+Current Instance:  N1C3W1_M.txt
+the sum of all items in the instance 2481
+#_eq_classes 38
+average class size 1.32
+generated_solutions  134589
+package generation time:  1.495781660079956
+optimum:  17.0
+model generation:  3.7006897926330566
+solving time:  1.9663782119750977
+Current Instance:  N2C2W1_F.txt
+the sum of all items in the instance 5573
+#_eq_classes 59
+average class size 1.69
+generated_solutions  205320
+package generation time:  2.920440435409546
+optimum:  49.0
+model generation:  5.8067145347595215
+solving time:  3.1276285648345947
+Current Instance:  N2C2W1_D.txt
+the sum of all items in the instance 4986
+#_eq_classes 60
+average class size 1.67
+generated_solutions  478712
+package generation time:  7.00310754776001
+optimum:  42.0
+model generation:  13.890434265136719
+solving time:  11.500216722488403
+Current Instance:  N2C1W1_O.txt
+the sum of all items in the instance 4681
+#_eq_classes 65
+average class size 1.54
+generated_solutions  2324652
+package generation time:  36.198745250701904
+optimum:  48.0
+model generation:  72.47792410850525
+solving time:  111.54497838020325
+Current Instance:  N2C2W1_T.txt
+the sum of all items in the instance 4594
+#_eq_classes 59
+average class size 1.69
+generated_solutions  3162431
+package generation time:  48.94338941574097
+optimum:  39.0
+model generation:  96.88542890548706
+solving time:  169.38810300827026
+Current Instance:  N2C3W1_B.txt
+the sum of all items in the instance 5101
+#_eq_classes 63
+average class size 1.59
+generated_solutions  3946489
+package generation time:  64.19716310501099
+optimum:  35.0
+model generation:  122.73617506027222
+solving time:  185.16319227218628
+Current Instance:  N2C2W1_K.txt
+the sum of all items in the instance 4884
+#_eq_classes 68
+average class size 1.47
+generated_solutions  5312572
+package generation time:  77.89046883583069
+optimum:  41.0
+model generation:  169.99709033966064
+solving time:  408.0335612297058
+Current Instance:  N2C3W1_C.txt
+the sum of all items in the instance 5152
+#_eq_classes 62
+average class size 1.61
+generated_solutions  6009317
+package generation time:  92.82195711135864
+optimum:  35.0
+model generation:  187.05241560935974
+solving time:  325.452561378479
+Current Instance:  HARD4.txt
+the sum of all items in the instance 5550697
+#_eq_classes 198
+average class size 1.01
+generated_solutions  7049038
+package generation time:  691.6859459877014
+optimum:  57.0
+model generation:  207.2007749080658
+solving time:  261.5589430332184
+Current Instance:  HARD1.txt
+the sum of all items in the instance 5538841
+#_eq_classes 200
+average class size 1.0
+generated_solutions  8099821
+package generation time:  812.5333905220032
+optimum:  57.0
+model generation:  242.35850739479065
+solving time:  607.6484711170197
+Current Instance:  HARD9.txt
+the sum of all items in the instance 5500458
+#_eq_classes 200
+average class size 1.0
+generated_solutions  9313003
+package generation time:  894.2822682857513
+optimum:  56.0
+model generation:  279.11992359161377
+solving time:  791.4691097736359
+Current Instance:  Schwerin1_BPP1.txt
+the sum of all items in the instance 17331
+#_eq_classes 46
+average class size 2.17
+Academic license - for non-commercial use only
+optimum:  18.0
+model generation:  0.6283214092254639
+solving time:  5.023889541625977
+Schwerin1_BPP1.txt
+Current Instance:  Schwerin1_BPP10.txt
+the sum of all items in the instance 17345
+#_eq_classes 41
+average class size 2.44
+optimum:  18.0
+model generation:  0.1875011920928955
+solving time:  4.184805631637573
+Schwerin1_BPP10.txt
+Current Instance:  Schwerin1_BPP100.txt
+the sum of all items in the instance 17259
+#_eq_classes 43
+average class size 2.33
+optimum:  18.0
+model generation:  0.1904897689819336
+solving time:  0.1466062068939209
+Schwerin1_BPP100.txt
+Current Instance:  Schwerin1_BPP11.txt
+the sum of all items in the instance 17660
+#_eq_classes 45
+average class size 2.22
+optimum:  19.0
+model generation:  0.20844316482543945
+solving time:  60.01151466369629
+Schwerin1_BPP11.txt
+Current Instance:  Schwerin1_BPP12.txt
+the sum of all items in the instance 17496
+#_eq_classes 44
+average class size 2.27
+optimum:  18.0
+model generation:  0.2453470230102539
+solving time:  57.972962856292725
+Schwerin1_BPP12.txt
+Current Instance:  Schwerin1_BPP13.txt
+the sum of all items in the instance 17421
+#_eq_classes 43
+average class size 2.33
+optimum:  18.0
+model generation:  0.2154238224029541
+solving time:  2.036555290222168
+Schwerin1_BPP13.txt
