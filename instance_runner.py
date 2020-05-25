@@ -99,7 +99,8 @@ def runner(method,model,target,values,tout):
         start_mod_gen = tm()
         if method == 'covering':
             equivalence = covering_eq_class(lista,values_classes,tout)
-            equivalence.write('model.lp')
+#             comment on this line if you want to print the lp model in a separate file (can be useful to check the single constraints)
+#             equivalence.write('model.lp')
         elif method == 'packing':
             equivalence = packing_eq_class(lista,values_classes,tout)
         else:
