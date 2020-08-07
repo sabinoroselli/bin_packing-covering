@@ -11,6 +11,7 @@ sys.setrecursionlimit(20000)
 # instance = 'benchmark/Scholl_1/N3C1W1_A.txt'
 # instance = 'benchmark/Schwerin_1/Schwerin1_BPP10.txt'
 # instance = 'benchmark/Hard28/Hard28_BPP13.txt'
+# instance = 'benchmark/Wascher/Waescher_TEST0005.txt'
 instance = 'benchmark/Wascher/Waescher_TEST0022.txt'
 
 print('Package generation test')
@@ -64,45 +65,44 @@ print(values_classes)
 
 
 
-# NEW VERSION v1
-print('')
-print('###  INTEGRATED GENERATION + MANIPULATION  ###')
-print('')
-start_package_genm = tm()
-listam = manipulatedFitss(values_classes, target)
-print('Packages', len(listam))
-print('Example: ', listam[0])
-for i in range(min(10,len(listam))):
-	print(listam[i])
-
-print('')
-print('TOTAL TIME: ', tm() - start_package_genm)
-
-
-
-
-# # NEW VERSION v2
+# # NEW VERSION v1
 # print('')
-# print('###  STORING RESULT AS TREE  ###')
+# print('###  INTEGRATED GENERATION + MANIPULATION  ###')
 # print('')
 # start_package_genm = tm()
-# treea = manipulatedFitssTree(values_classes, target)
-
-
-
-# print('  package generation: ', tm() - start_package_genm)
+# listam = manipulatedFitss(values_classes, target)
+# print('Packages', len(listam))
+# print('Example: ', listam[0])
+# for i in range(min(10,len(listam))):
+# 	print(listam[i])
 
 # print('')
 # print('TOTAL TIME: ', tm() - start_package_genm)
 
 
-# # WANNA VERIFY THE NUMBER OF SOLUTIONS IN THE TREE
-# def countSolutions(tree):
-# 	if isinstance(tree,int):
-# 		return 1
-# 	else:
-# 		return sum([countSolutions(t) for t in tree])
-# print(countSolutions(treea))
+
+
+# NEW VERSION v2
+print('')
+print('###  STORING RESULT AS TREE  ###')
+print('')
+start_package_genm = tm()
+treea = manipulatedFitssTree(values_classes, target)
+
+
+print('  package generation: ', tm() - start_package_genm)
+
+print('')
+print('TOTAL TIME: ', tm() - start_package_genm)
+
+
+# WANNA VERIFY THE NUMBER OF SOLUTIONS IN THE TREE
+def countSolutions(tree):
+	if isinstance(tree,int):
+		return 1
+	else:
+		return sum([countSolutions(t) for t in tree])
+print(countSolutions(treea))
 
 
 # # # WANNA SEE WHAT THE TREE LOOKS LIKE?
@@ -118,7 +118,6 @@ print('TOTAL TIME: ', tm() - start_package_genm)
 
 
 
-
 # NEW VERSION v3
 print('')
 print('###  NOVEL IDEA ON WHAT PACKAGES THAT IS REQUIRED  ###')
@@ -128,30 +127,8 @@ print('')
 remaining_value = [sum([values_classes[i][0]*values_classes[i][1] for i in range(j+1,len(values_classes))]) 
     for j in range(len(values_classes))]
 
-
-# An upgrade to fitss(vms, partial, target)
-# Major changes:
-# - uses indices instead of list manipulation for the vms
-# - generates the manipulated version directly, i.e. only includes nonzero classes as as dict.s
-def fitterPackageGeneration(vms, target, index=0, partial={}):
-    vm = vms[index]   # I reverse the order of pop since pop() has complexity O(1)
-    v, m = vm[0], vm[1]
-    c1 = max(0, (target - remaining_value[index]) // v)
-    c2 = min(m, target // v)
-
-    if index == len(vms) - 1:
-        # if target - m * v < vms[0][0]:
-        return [updatePartial(partial, v, c2)]
-        # else:
-        #     print(updatePartial(partial, v, c2))
-        #     return []
-    else:
-        return concat(
-            [fitterPackageGeneration(vms, target - d * v, index=index + 1, partial=updatePartial(partial, v, d)) for d in range(c1, c2 + 1)])
-
-
 start_package_genm = tm()
-listam = fitterPackageGeneration(values_classes, target)
+listam = fitterPackageGeneration(values_classes, remaining_value, target)
 print('Packages', len(listam))
 print('Example: ', listam[0])
 for i in range(min(10,len(listam))):

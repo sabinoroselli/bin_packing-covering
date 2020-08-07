@@ -97,6 +97,28 @@ def manipulatedFitssTree(vms, target, i=0):
 
 
 
+# An upgrade to manipulatedFitss(vms, partial, target)
+# Major changes:
+# - does not add virtual items, instead it added second smallest items and then thrid smallest items and so on
+def fitterPackageGeneration(vms, rem, target, index=0, partial={}):
+    vm = vms[index]   # I reverse the order of pop since pop() has complexity O(1)
+    v, m = vm[0], vm[1]
+    c1 = max(0, (target - rem[index]) // v)
+    c2 = min(m, target // v)
+
+    if index == len(vms) - 1:
+        # if target - m * v < vms[0][0]:
+        return [updatePartial(partial, v, c2)]
+        # else:
+        #     print(updatePartial(partial, v, c2))
+        #     return []
+    else:
+        return concat(
+            [fitterPackageGeneration(vms, rem, target - d * v, index=index + 1, partial=updatePartial(partial, v, d)) for d in range(c1, c2 + 1)])
+
+
+
+
 # this recursive function generates a list of equivalence classes (and their cardinality) out of a list of items
 def Partition(lista):
     eq_class = []
