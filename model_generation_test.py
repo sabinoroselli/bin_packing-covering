@@ -6,9 +6,9 @@ import csv
 import sys
 sys.setrecursionlimit(20000)
 
-# instance = 'benchmark/Falkenauer_t/Falkenauer_t60_00.txt'
+instance = 'benchmark/Falkenauer_t/Falkenauer_t60_00.txt'
 # instance = 'benchmark/Hard28/Hard28_BPP13.txt'
-instance = 'benchmark/Wascher/Waescher_TEST0005.txt'
+#instance = 'benchmark/Wascher/Waescher_TEST0005.txt'
 
 # parsing the instance file
 with open(instance, mode='r') as in_file:
@@ -35,7 +35,6 @@ print('package manipulation: ', tm() - start_package_manipulation)
 
 # turning the value_classes list into a dict (for convenience)
 values_classes = {str(sub[0]): sub[1] for sub in values_classes}
-
 print('generated_solutions ', len(lista))
 
 # print(lista)
